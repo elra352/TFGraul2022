@@ -1,5 +1,5 @@
 # DHT22 y MQTT
-Este proyecto realiza la lectura del sensor DHT22 y la "envia" a thingsboard y es una variacion del codigo de DHT22only junto con los ejemplos wifi/station y mqtt/tcp de esp-idf.
+Este proyecto realiza la lectura del sensor DHT22 y la "envia" a thingsboard. Es una variacion del codigo de DHT22only junto con los ejemplos wifi/station y mqtt/tcp de esp-idf.
 
 ## Datos importantes
 - HOSTIP_MQTT: La direccion IP del ordenador donde se esta ejecutando la version local de thingsboard
