@@ -4,6 +4,8 @@ Este proyecto realiza la lectura del sensor DHT22 y la "envia" a Thingsboard. Es
 El archivo esp32panel.json es el panel que use para la lectura de los datos en Thingsboard.
 
 ## Datos importantes
+- DHT_GPIO: El numero del pin que se usa para la lectura del sensor DHT22.
+- HOSTIP_MQTT: La dirección IP del broker MQTT en forma de string.
 - HOSTIP_MQTT: La direccion IP del ordenador donde se esta ejecutando la version local de Thingsboard
 - PORT_MQTT: Puerto TCP (1883)
 - ACCESS_TOKEN: El token de acceso del dispositivo, se puede obtener en la interfaz de Thingsboard
