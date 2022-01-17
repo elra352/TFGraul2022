@@ -36,6 +36,9 @@
 
 static const char *TAG = "dhtYmqtt";
 
+#define BLINK_GPIO 5
+#define DHT_GPIO 4
+
 #define HOSTIP_MQTT     "192.168.1.xx"          // IP address of the MQTT broker
 #define PORT_MQTT       1883
 #define ACCESS_TOKEN    "NB8gd8mglmC6rClVUj1G"
@@ -154,12 +157,10 @@ void wifi_init_sta(void)
 
 ///////////////// WIFI END ///////////////////////////////
 
-#define BLINK_GPIO 5
-
 void DHT_task(void *pvParameter)
 {
 
-    setDHTgpio(4);
+    setDHTgpio(DHT_GPIO);
     ESP_LOGI(TAG, "Starting DHT Task\n\n");
 
     // configuracion del gpio para un parpadeo

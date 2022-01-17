@@ -12,10 +12,11 @@
 
 static const char *TAG = "DHT";
 #define BLINK_GPIO 5
+#define DHT_GPIO 4
 
 void DHT_task(void *pvParameter)
 {
-    setDHTgpio(4);
+    setDHTgpio(DHT_GPIO);
     ESP_LOGI(TAG, "Starting DHT Task\n\n");
     // configuracion del gpio para un parpadeo
     gpio_reset_pin(BLINK_GPIO);
