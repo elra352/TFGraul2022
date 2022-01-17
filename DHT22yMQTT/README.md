@@ -1,7 +1,7 @@
 # DHT22 y MQTT
 Este proyecto realiza la lectura del sensor DHT22 y la "envia" a Thingsboard. Es una variacion del codigo de DHT22only junto con los ejemplos wifi/station y mqtt/tcp de esp-idf.
 
-El archivo esp32panel.json es el panel que use para la lectura de los datos en Thingsboard.
+El archivo esp32panel.json es el panel que use para la lectura de los datos en Thingsboard y el archivo create___clear_alarms.json es una cadena de reglas para crear y eliminar alarmas de temperatura elevada (>25).
 
 ## Datos importantes
 - BLINK_GPIO: El numero del pin que se usa para el parpadeo del led.
